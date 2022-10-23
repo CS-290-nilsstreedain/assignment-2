@@ -2,6 +2,166 @@
  * You should write your CSS in this file.  Don't forget to add your name and
  * @oregonstate.edu email address below.
  *
- * name:
- * email:
+ * name: Nils Streedain
+ * email: streedan@oregonstate.edu
  */
+
+body {
+	margin: 0;
+}
+
+main {
+	margin: 165px 10px;
+	font-family: Roboto;
+}
+
+/*************** Header ***************/
+header {
+	width: 100%;
+	position: absolute;
+	top: 5px;
+	background-color: #000;
+}
+
+header div {
+	float: left;
+	display: flex;
+}
+
+header a {
+	font: 75px Roboto Slab;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	bottom: 5px;
+}
+
+/*************** Filters ***************/
+
+.filter-container {
+	background-color: #f1f1f1;
+	padding: 20px;
+	border-radius: 10px;
+	width: 250px;
+	float: left;
+}
+
+h2 {
+	margin: 0;
+}
+
+h2, .filter-input-container {
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.filter-input-label {
+	padding-top: 3px;
+}
+
+.filter-input-element {
+	width: 100%;
+	padding-left: 10px;
+}
+
+.filter-input {
+	width: 100%;
+	font-size: 16px;
+	padding: 2px;
+	margin: 0;
+	border: 1px solid #c8c8c8;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.filter-fieldset {
+	width: 100%;
+}
+
+.action-button {
+	width: 100%;
+	background-color: #000;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 25px;
+	font-weight: 100;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+.action-button:hover {
+	background-color: #f3d0b5;
+	color: #000;
+	cursor: pointer;
+}
+
+/*************** Posts ***************/
+#posts {
+/*	background-color: red;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	padding-left: 10px;
+}
+
+.post {
+	flex: 1;
+	margin: 0 10px 20px 10px;
+	max-width: 300px;
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.post-contents {
+	width: 300px;
+	height: 300px;
+}
+
+.post-image-container img {
+	width: 300px;
+	height: 200px;
+	object-fit: contain;
+}
+
+.post-title {
+	color: #f68131;
+	text-decoration: none;
+}
+
+.post-title:hover {
+	text-decoration: underline;
+}
+
+.post-price {
+	border: 1px solid #000;
+	border-radius: 5px;
+	background-color: #efefef;
+	padding: 3px;
+	font-size: 12px;
+}
+
+/*************** Button ***************/
+#sell-something-button {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	border-radius: 100%;
+	border: none;
+	width: 65px;
+	height: 65px;
+	color: #fff;
+	background-color: #f67811;
+	font-size: 35px;
+	box-shadow: 4px 4px 16px #999;
+}
+
+#sell-something-button:hover {
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	font-size: 37.7px;
+	bottom: 22.5px;
+	right: 22.5px;
+}
